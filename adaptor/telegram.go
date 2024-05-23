@@ -19,7 +19,7 @@ func NewTelegramBotAdaptor(bot *telebot.Bot) TelegramBot {
 func (b *TelegramAdaptor) SendMessage(message string) {
 
 	value := utils.Recipient{
-		ChatId: "7040234590",
+		ChatId: "",
 	}
 	b.bot.Send(&value, message)
 }
